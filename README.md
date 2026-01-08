@@ -1,38 +1,51 @@
-# vue-project
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js Logo" width="150"/>
+</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+# My Vue.js Project
 
-## Recommended IDE Setup
+This is a Vue.js application containerized with Docker for easy setup and deployment.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Built with Vue.js 3
+- Fully containerized using Docker
+- Ready for development and production
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Prerequisites
 
-## Project Setup
+Before you begin, make sure you have the following installed:
 
-```sh
-npm install
+- Docker
+- Node.js & npm 
+
+---
+
+## Setup Guide
+
+ 1. **Clone the repository**
+
+```bash
+git clone https://github.com/pranavrjb/vue-app.git
+cd vue-app
 ```
 
-### Compile and Hot-Reload for Development
+2. **Docker Setup**
 
-```sh
-npm run dev
+```bash 
+docker build -t vue-docker-app .
 ```
 
-### Compile and Minify for Production
+3. **Run Docker Container**
 
-```sh
-npm run build
+```bash 
+docker run -d -p 8080:80 --name vue-app-v1 vue-docker-app
 ```
+
+4. **Open browser**
+https://localhost:8080
+
